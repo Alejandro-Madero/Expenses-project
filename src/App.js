@@ -1,6 +1,7 @@
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
 
-function App() {
+const App = () => {
+  console.log(this);
   const expenses = [
     {
       id: "e1",
@@ -31,6 +32,6 @@ function App() {
       detecte. Elementos que empiezan con minuscula React entiende que son built in elementos de HTML  */}
     </div>
   );
-}
+};
 
 export default App;

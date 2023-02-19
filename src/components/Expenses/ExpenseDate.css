@@ -4,8 +4,8 @@
   width: 5.5rem;
   height: 5.5rem;
   box-shadow: 0 0.5px 5px 1.5px rgba(255, 255, 255, 0.25);
-  background-color: #4b4b4b;
-  background-color: #2a2a2a25;
+
+  background-color: rgba(31, 31, 31, 0.4);
   color: white;
   border-radius: 12px;
   align-items: center;
