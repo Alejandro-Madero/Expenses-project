@@ -7,9 +7,9 @@ function ExpenseDate({ date }) {
 
   return (
     <div className="expense-date">
-      <div>{month}</div>
-      <div>{year}</div>
-      <div>{day}</div>
+      <p className="expense-date__month">{month}</p>
+      <p className="expense-date__year">{year}</p>
+      <p className="expense-date__day">{day}</p>
     </div>
   );
 }
