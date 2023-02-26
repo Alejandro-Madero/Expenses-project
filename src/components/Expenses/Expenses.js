@@ -1,5 +1,6 @@
 import ExpenseItem from "./ExpenseItem";
 import Card from "../UI/Card";
+import NewExpense from "../NewExpense/NewExpense";
 import "./Expenses.css";
 
 const Expenses = ({ items }) => {
@@ -26,6 +27,7 @@ const Expenses = ({ items }) => {
         amount={items[3].amount}
         date={items[3].date}
       />
+      <NewExpense />
     </Card>
   );
 };
