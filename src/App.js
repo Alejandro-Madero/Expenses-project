@@ -25,9 +25,13 @@ const App = () => {
     },
   ];
 
+  const addExpenseHandler = (expense) => {
+    expenses.push(expense);
+    console.log(expenses);
+  };
   return (
     <div className="App">
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
       {/* componentes custom tienen que empezar con mayuscula para que React los
       detecte. Elementos que empiezan con minuscula React entiende que son built in elementos de HTML  */}

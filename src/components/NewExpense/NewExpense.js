@@ -3,9 +3,17 @@ import ExpenseForm from "./ExpenseForm";
 import "./NewExpense.css";
 
 const NewExpense = (props) => {
+  console.log(props);
+  const saveFormDataHandler = (expenseData) => {
+    const expense = {
+      ...expenseData,
+      id: crypto.randomUUID(),
+    };
+    props.onAddExpense(expense);
+  };
   return (
     <div className="new-expense">
-      <ExpenseForm />
+      <ExpenseForm onSaveFormData={saveFormDataHandler} />
     </div>
   );
 };
