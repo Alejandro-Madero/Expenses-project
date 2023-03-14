@@ -3,7 +3,7 @@ import ExpenseForm from "./ExpenseForm";
 import "./NewExpense.css";
 
 const NewExpense = (props) => {
-  console.log(props);
+  console.log("Entre aca");
   const saveFormDataHandler = (expenseData) => {
     const expense = {
       ...expenseData,
