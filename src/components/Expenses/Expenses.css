@@ -5,3 +5,10 @@
   width: 60rem;
   max-width: 95%;
 }
+
+.expenses__error {
+  color: white;
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: bold;
+}

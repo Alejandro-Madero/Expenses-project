@@ -30,7 +30,6 @@ const App = () => {
   const [expenses, setExpenses] = useState(expensesArr);
 
   const addExpenseHandler = (expense) => {
-    expensesArr.push(expense);
     setExpenses((prevExpenses) => [expense, ...prevExpenses]);
   };
   return (
