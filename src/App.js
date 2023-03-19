@@ -33,7 +33,7 @@ const App = () => {
     setExpenses((prevExpenses) => [expense, ...prevExpenses]);
   };
   return (
-    <div className="App">
+    <div className="App">      
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
       {/* componentes custom tienen que empezar con mayuscula para que React los

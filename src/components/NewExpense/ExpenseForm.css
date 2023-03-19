@@ -13,12 +13,13 @@
 }
 
 .new-expense__controls {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1 1;
-  gap: 2rem 4rem;
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap: 2rem 0rem;
+  align-items:center;
+justify-items:center;
   margin-bottom: 1rem;
-  text-align: left;
+
 }
 
 .new-expense__control label {
@@ -46,4 +47,9 @@
   display: flex;
   align-self: flex-end;
   gap: 1rem;
+}
+
+.new-expense__actions button{
+  background-color:red;
+  color:blue;
 }
