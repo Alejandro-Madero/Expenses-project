@@ -7,24 +7,27 @@
 
 .chart-bar__inner {
   height: 100%;
-  width: 100%;
-  border: 1px solid #313131;
-  border-radius: 12px;
-  background-color: #c3b4f3;
+  width: 4rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.25);
   overflow: hidden;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  align-items: flex-end;
+  cursor: pointer;
 }
 
 .chart-bar__fill {
-  background-color: #4826b9;
+  background-color: #ffffff;
   width: 100%;
+
   transition: all 0.3s ease-out;
 }
 
 .chart-bar__label {
   font-weight: bold;
-  font-size: 0.5rem;
+  font-size: 0.85rem;
+  color: white;
   text-align: center;
+  margin: 0.5rem 0 0.5rem 0;
 }

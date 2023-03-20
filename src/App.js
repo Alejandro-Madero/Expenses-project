@@ -25,15 +25,13 @@ const expensesArr = [
 ];
 
 const App = () => {
-  console.log(this);
-
   const [expenses, setExpenses] = useState(expensesArr);
 
   const addExpenseHandler = (expense) => {
     setExpenses((prevExpenses) => [expense, ...prevExpenses]);
   };
   return (
-    <div className="App">      
+    <div className="App">
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
       {/* componentes custom tienen que empezar con mayuscula para que React los

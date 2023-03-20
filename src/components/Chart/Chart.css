@@ -1,9 +1,15 @@
 .chart {
-  padding: 1rem;
+  margin: 1rem 1rem;
+  display: flex;
+  justify-content: center;
   border-radius: 12px;
-  background-color: #f8dfff;
+  background-color: #4b4b4b;
+}
+
+.chartbar-container {
+  margin: 0.75rem 1.5rem;
   text-align: center;
   display: flex;
-  justify-content: space-around;
-  height: 10rem;
+  gap: 0.5rem;
+  height: 15rem;
 }
