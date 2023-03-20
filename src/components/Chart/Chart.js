@@ -10,9 +10,10 @@ const Chart = (props) => {
         {props.expenses.map((expense) => {
           return (
             <ChartBar
+              key={expense.label}
               label={expense.label}
               value={expense.value}
-              height={`${Math.round((expense.value / maxValue) * 100) || 0}%`}
+              maxValue={maxValue}
             />
           );
         })}
